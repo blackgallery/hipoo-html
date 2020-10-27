@@ -1,0 +1,726 @@
+/*----------------------------------------------------
+   Global styles
+------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600,700|Baloo:300,400,500&display=swap');
+
+body {
+  background: #fff;
+  color: #61657a;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+  position: relative; 
+}
+
+img {
+  max-width: 100%;
+}
+
+/* === PARAGRAPH === */
+
+p {
+  margin: 0 0 10px;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+/* ===  Headings === */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #021F60;
+  font-family: 'Baloo', sans-serif;
+  margin: 0 0 15px;
+  padding: 0;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+
+/* ## End: Headings ## */
+
+/* === Hyperlink === */
+
+a {
+  color: #303030;
+  /*transition*/
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+a,
+a>* {
+  cursor: pointer;
+  outline: medium none;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  outline: medium none;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* === Hyperlink === */
+ 
+button {
+  font-family: 'Baloo', sans-serif;
+  font-weight: 500;
+  color: #021F60;
+  cursor: pointer;
+}
+ 
+ 
+/*======================
+      Header 
+ ======================= */
+.table_area {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background-color: rgba(2, 31, 96, 0.8);
+}
+.close_tbl {
+  float: right;
+  margin-top: -16px;
+  margin-right: -40px;
+}
+.table_area .table_wrap {
+
+  background: #fff;
+  border-radius: 15px;
+  margin: auto;
+  width: 930px;
+  box-shadow: 0px 0px 20px 0px rgba(138,138,138,0.5);
+  padding: 20px 50px 45px;
+
+}
+
+.header {
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.header h2 {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 28px;
+  margin-left: 20px;
+}
+
+.header img {
+  margin-top: -30px;
+}
+
+.table_area h3 {
+  color: #021F60;
+  font-size: 16px;
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.flex-item {
+  flex-grow: 3;
+  width: 29%;
+}
+
+ 
+.table_part_one .flex-container,
+.tabcontent .flex-container  {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  text-align: center;
+  background: #F2F2F2;
+  padding: 23px 0px 20px;
+  border-radius: 8px;
+}
+.table_part_one .flex-item:nth-child(3) .table_year:last-child {
+  margin-left: -20px;
+}
+.table_part_one .flex-item:nth-child(1) .table_year:last-child {
+  margin-left: -20px;
+}
+.table_year {
+  width: 45%;
+  float: left;
+  text-align: center;
+}
+
+.table_year:last-child {
+  width: 55%;
+}
+
+.table_year H4 {
+  background: #38AACF;
+  color: #fff;
+  font-size: 14px;
+  display: inline;
+  padding: 0px 14px;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+.table_year p {
+  color: #38AACF;
+  margin-top: -5px;
+  margin-bottom: 0px;
+}
+.table_part_one  p {
+  font-family: 'Baloo', sans-serif;
+}
+.table_part_one  h3 {
+  font-size: 16px;
+}
+.table_year span {
+  display: block;
+  color: #484848;
+  font-size: 21px;
+  margin-top: 10px;
+}
+
+/*  Tbale Part Two */
+
+.table_part_two .flex-container {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  text-align: center;
+  padding: 30px 0px;
+}
+ 
+ 
+.table_part_two .flex-item:nth-child(2) ,
+.table_part_two .flex-item:nth-child(5)
+{
+  width: 42%;
+  /* background: yellow; */
+}
+.table_part_two p {
+  font-size: 18px;
+  color: #484848;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+.table_part_two h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+.req_btn {
+  background: #EC2890;
+  color: #fff;
+  padding: 3px 20px;
+  border-radius: 40px;
+  border: 1px solid #CA0067;
+  box-shadow: 0px 0px 5px 2px #BBB7B7;
+  font-size: 15px;
+  margin-top: -5px;
+  letter-spacing: 1px;
+}
+/*  Tbale Part Three  */
+.table_part_three {
+  margin-top: -10px;
+}
+.table_part_three .flex-item:nth-child(3) {
+  width: 42%;
+}
+.table_btn {
+  background: #DBDBDB;
+  padding: 6px 0px 5px;
+  border-radius: 40px;
+  border: 1px solid transparent;
+  box-shadow: none;
+  font-size: 17px;
+  margin-top: -5px;
+  width: 230px;
+  letter-spacing: .5px;
+}
+
+.table_btn:hover {
+  background: #021F60;
+  color: #fff;
+  
+}
+.table_btn.active {
+  background: #021F60;
+  color: #fff;
+}
+
+/* ======== Tab Conntent ========= */
+/* Style the tab content */
+.tabcontent {
+  display: none; 
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+  order: 4;
+  width: 100%;
+  transition: transform 1s ease-in-out 0s;
+  -moz-transition: -moz-transform 1s ease-in-out 0s;
+  -webkit-transition: -webkit-transform 1s ease-in-out 0s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.dflex-container {
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  text-align: center;
+  background: #F2F2F2;
+  border-radius: 8px;
+  padding: 23px 0px 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.dflex-item {
+  width: 29%;
+}
+
+.tabcontent p {
+  font-size: 21px;
+  color: #484848;
+  margin-top: -10px;
+  margin-bottom: 22px;
+}
+ 
+
+/*====== Comisiones Table  =====*/
+
+.comisiones_tbl .dflex-item {
+  width: 25%;
+}
+.comisiones_tbl .dflex-item h3 {
+  font-size: 16px;
+  height: 42px;
+}
+.comisiones_tbl .dflex-item p {
+  margin-bottom: 5px;
+}
+#comisiones .dflex-item {
+  width: 25%;
+}
+/*====== Vinculaciones Table  =====*/
+#vinculaciones .dflex-item {
+  width: 33.33%;
+  padding-right: 16px;
+  margin: 5px 0px;
+}
+#vinculaciones .dflex-item:nth-child(3), 
+#vinculaciones .dflex-item:nth-child(6),  
+#vinculaciones .dflex-item:nth-child(9) {
+  width: 30.33%;
+}
+
+#vinculaciones .dflex-container {
+  text-align: left;
+  padding: 20px 0px 20px 15px;
+}
+#vinculaciones .dflex-item h3 {
+  color: #021F60;
+  font-size: 15px;
+  text-align: left;
+  display: inline;
+  margin-left: 10px;
+}
+#vinculaciones .dflex-item img {
+  float: left;
+  margin-top: 3px;
+  width: 20px;
+}
+#vinculaciones .dflex-item span {
+  color: #484848;
+  font-size: 18px;
+  float: right;
+}
+
+
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 71px;
+}
+
+/*       Tinsa Page 
+=================================*/
+.tasación_page .table_wrap {
+  padding: 25px 50px 45px;
+}
+
+.tinsa_wrap {
+  text-align: center;
+}
+
+.tinsa_wrap h3 {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+.tinsa_wrap h4 {
+  font-size: 16px;
+  color: #021F60;
+  margin-bottom: 2px;
+}
+.tinsa_wrap h2 {
+  font-size: 32px;
+  color: #38AACF;
+  margin-bottom: 0px;
+}
+.tinsa_wrap .req_btn {
+  font-size: 18px;
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+}
+.tinsa_wrap p {
+  color: #939393;
+  font-size: 9px;
+}
+.tinsa_wrap p span {
+  border-bottom: .5px solid #939393;
+}
+.tinsa_wrap a {
+  font-size: 15px;
+  color: #EC2890;
+  font-family: 'Baloo', sans-serif;
+}
+.tinsa_hipoo {
+ position: relative;
+  display: inline-block;
+}
+.tinsa_hipoo::after {
+  position: absolute;
+  content: "<";
+  left: -11px;
+  font-size: 19px;
+  bottom: 6px;
+  color: #000;
+}
+.tinsa_hipoo::before {
+  position: absolute;
+  content: ">.";
+  right: -15px;
+  font-size: 19px;
+  bottom: 6px;
+  color: #000;
+}
+
+
+
+/*       Tinsa enviado Page 
+=================================*/
+
+.tinsa_enviado_page {
+  text-align: center;
+}
+.tinsa_enviado_page .header img {
+  margin-top: -22px;
+}
+.tinsa_enviado_page .table_wrap {
+  padding: 25px 50px 70px;
+}
+.tinsa_enviado_wrap h3 {
+  color: #000;
+  margin-top: 10px;
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+.tinsa_enviado_bx {
+  width: 455px;
+  margin: auto;
+  background: #021F60;
+  color: #fff;
+  padding: 20px 60px;
+  border-radius: 5px;
+}
+.tinsa_enviado_bx img {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 4px 3px;
+}
+.tinsa_enviado_bx h4 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 7px;
+  margin-top: 16px;
+}
+.tinsa_enviado_bx a {
+  color: #EC2890;
+  font-family: 'Baloo', sans-serif;
+  letter-spacing: 1px;
+}
+.tinsa_enviado_bx p {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+
+/*=======================   RESPONSIVE  =================================*/
+
+/* -----  Tablet Landscape   -----*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/* -----  Tablet Portrait  -----*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+.table_part_three .flex-item:nth-child(3) {
+    width: 33%;
+}
+#vinculaciones .dflex-item {
+  width: 100% !important;
+}
+#vinculaciones .dflex-container {
+  padding: 20px 20px 20px 30px;
+}
+#vinculaciones .dflex-item h3 {
+  font-size: 14px;
+}
+#comisiones .dflex-item {
+    width: 50%;
+    padding: 0px 0px;
+    margin-bottom: 10px;
+    align-self: end;
+}
+
+}
+/* -----  Phone  -----*/
+@media only screen and (max-width: 767px) {
+.table_area {
+    height: auto;
+    min-height: auto; 
+}
+.header {
+    margin-bottom: 0px;
+    text-align: center;
+}
+.header img {
+  margin: auto;
+  display: block;
+  width: 190px;
+  margin-top: -30px;
+  margin-bottom: 10px;
+}
+.header h2 {
+  font-size: 16px;
+  margin-left: 0px;
+}
+.table_area .table_part_one h3 { 
+  margin-bottom: 5px;
+}
+.close_tbl {
+  position: absolute;
+  right: 0px;
+  margin-right: 10px;
+}
+.table_area .table_wrap {
+  padding: 20px 15px 30px;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.table_part_one .flex-container {
+  padding: 10px 0px 0px;
+}
+.table_part_one .flex-item {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.table_part_one .flex-item:nth-child(1) 
+.table_year:last-child {
+  margin-left: 0px;
+}
+
+.table_part_one .flex-item:nth-child(2) .table_year:last-child {
+  border-right-width: 0px;
+}
+.table_part_one .flex-item:nth-child(2) .table_year {
+  width: 50%;
+  border: 3px solid #fff;
+  border-left-width: 0px;
+  padding: 8px 0px;
+}
+
+.table_part_one .flex-item:nth-child(3) 
+.table_year:last-child {
+  margin-left: 0px;
+}
+.table_part_one .flex-item:nth-child(2) h3 {
+  margin-bottom: -7px;
+}
+/* Table Part Two  */
+.table_part_two .flex-item {
+  width: 50% !important;
+}
+.table_part_two .flex-item h3 {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.req_btn {
+  padding: 1px 10px;
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+.table_part_two p {
+  margin-bottom: 20px;
+}
+
+/* Table Part Three  */
+.table_part_three .flex-item {
+  width: 100%;
+  order: 1;
+}
+.table_btn {
+  font-size: 16px; 
+  width: 100%;
+  margin-bottom: 15px;
+}
+.tabcontent {
+  order: 1;
+}
+.dflex-container {
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+#impuestos .dflex-item:nth-child(2n) {
+  width: 65%;
+}
+#impuestos h3 { 
+  font-size: 15px;
+}
+#impuestos .dflex-container { 
+  padding: 23px 10px 20px;
+}
+#impuestos .req_btn {
+  position: relative;
+  top: -10px;
+}
+
+
+#comisiones .dflex-item {
+  width: 50%;
+  padding: 0px 0px;
+  margin-bottom: 10px;
+  align-self: end;
+}
+.comisiones_tbl .dflex-item h3 {
+  height: auto;
+
+}
+#comisiones .dflex-container {
+  padding-bottom: 5px;
+}
+#impuestos .req_btn {
+  position: relative;
+  top: -10px;
+}
+
+#vinculaciones .dflex-item {
+  width: 100% !important;
+}
+#vinculaciones .dflex-container {
+  padding: 20px 10px 20px 15px;
+}
+#vinculaciones .dflex-item h3 {
+  font-size: 14px;
+}
+#comisiones .dflex-item {
+    width: 50%;
+    padding: 0px 0px;
+    margin-bottom: 10px;
+    align-self: end;
+}
+
+/*   */
+.tinsa_wrap .req_btn {
+  font-size: 16px;
+  letter-spacing: 0px;
+}
+.tinsa_wrap img{
+  width: 170px;
+  margin-bottom: 15px;
+}
+.tinsa_wrap p { 
+  margin-bottom: 15px !important;
+}
+/*  */
+.tinsa_enviado_wrap h3 {
+  margin: auto; 
+  margin-top: 15px;
+  font-size: 16px;
+  margin-bottom: 25px;
+  width: 240px;
+  
+}
+.tinsa_enviado_bx {
+  padding: 20px 20px;
+  width: 310px;
+}
+
+.tinsa_enviado_bx p {
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.tinsa_enviado_bx {
+  padding: 30px 20px;
+}
+
+}
+/* -----   Mobile Vertical Layout: 488px   -----*/
+@media only screen and (max-width: 488px) { 
+  .tinsa_wrap p {
+    line-height: 15px;
+    padding: 10px 13px 10px;
+    text-align: left;
+    width: 296px;
+    margin: auto;
+}
+  
+
+
+}

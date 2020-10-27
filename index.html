@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <!-->
+<html lang="zxx">
+<!--
+<![endif]-->
+
+<head>
+    <!-- TITLE OF SITE -->
+    <title> Hipoo</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Hipoo" />
+    <meta name="keywords" content="Hipoo, business, corporate" />
+    <meta name="author" content="Revita">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- CSS Begins
+================================================== -->
+    <!--BootStrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!--[if IE]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+    <!-- Start: Section 
+==================================================-->
+    <div class="table_area">
+        <div class="table_wrap">
+            <a class="close_tbl" href="#">
+                <img src="images/close.png" alt="">
+            </a>  
+            <div class="header">
+                <img src="images/logo.png" alt="image">
+                <h2>Hipoteca variable del Santander</h2>
+            </div>    
+            <div class="table_part_one">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <h3>Cuota mensual</h3>
+                        <div class="table_year">
+                            <h4> 1º año </h4>
+                            <span>685€</span>
+                        </div>
+                        <div class="table_year">
+                            <h4> Resto 29 años </h4>
+                            <span>485€</span>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="table_year">
+                            <h3>Plazo</h3>
+                            <span>30 años</span>
+                        </div>
+                        <div class="table_year">
+                            <h3>Tipo de interés</h3>
+                            <span>VARIABLE</span>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <h3>Diferencial</h3>
+                        <div class="table_year">
+                            <h4> 1º año </h4>
+                            <span>1,50%</span>
+                            <p>+euríbor</p>
+                        </div>
+                        <div class="table_year">
+                            <h4> Resto 29 años </h4>
+                            <span>0,90%</span>
+                            <p>+euríbor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- table part one -->
+             
+            <div class="table_part_two">
+                <div class="flex-container"> 
+                    <div class="flex-item">
+                        <h3>Ahorro a aportar</h3>
+                        <p>100.000€</p>
+                    </div>
+                    <div class="flex-item">
+                        <h3>Importe financiado</h3>
+                        <p>232.000€</p>
+                    </div>
+                    <div class="flex-item">
+                        <h3>Precio del inmueble</h3>
+                        <p>300.000€</p>
+                    </div>
+                    <div class="flex-item">
+                        <h3>Titulares de la hipoteca</h3>
+                        <p>DOS</p>
+                    </div>  
+
+                    <div class="flex-item">
+                        <h3>Fecha estimada de firma</h3>
+                        <p>15-04-2020</p>
+                    </div>  
+                    <div class="flex-item">
+                        <h3>Valor de tasación</h3>
+                        <button class="req_btn" onclick="window.location.href = 'tasacion-tinsa.html';">Solicitar tasación</button>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="table_part_three">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <button class="table_btn tablinks" onclick="openCity(event, 'impuestos')">IMPUESTOS Y GASTOS</button>
+                    </div>
+                    <div class="impuestos_tbl tabcontent" id="impuestos">
+                        <div class="dflex-container">
+                            <div class="dflex-item"> 
+                                <h3>Notaría</h3>
+                                <p>685€</p>
+                            </div>
+                            <div class="dflex-item"> 
+                                <h3>Registro de la propiedad</h3>
+                                <p>685€</p>
+                            </div>
+                            <div class="dflex-item">
+                                <h3>Gestoría</h3>
+                                <p>685€</p>
+                            </div>
+                            <div class="dflex-item">
+                                <h3>Nota simple</h3>
+                                <p>685€</p>
+                            </div>
+                            <div class="dflex-item">
+                                <h3>Impuestos </h3>
+                                <p>685€</p>
+                            </div> 
+                            <div class="dflex-item">
+                                <h3>Tasación</h3>
+                                <button class="req_btn" onclick="window.location.href = 'tasacion-tinsa.html'">Solicitar tasación</button>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- impuestos -->
+
+
+                    <div class="flex-item">
+                        <button class="table_btn tablinks" onclick="openCity(event, 'comisiones')">COMISIONES</button>
+                    </div>
+                    <div class="comisiones_tbl tabcontent" id="comisiones">
+                        <div class="dflex-container">
+                            <div class="dflex-item">
+                                <h3>Comisión de apertura</h3>
+                                <p>685€</p>
+                            </div>
+                            <div class="dflex-item">
+                                <h3>Amortización <br> anticipada Parcial</h3>
+                                <p>685€</p>
+                            </div>
+                            <div class="dflex-item">
+                                <h3>Amortización <br> anticipada Total</h3>
+                                <p>685€</p>
+                            </div>
+                            <div class="dflex-item">
+                                <h3>Subrogación</h3>
+                                <p>685€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- comisiones -->
+
+                    <div class="flex-item">
+                        <button class="table_btn tablinks" onclick="openCity(event, 'vinculaciones')">VINCULACIONES</button>
+                    </div>
+                    <div class="comisiones_tbl tabcontent" id="vinculaciones">
+                        <div class="dflex-container">
+                            <div class="dflex-item">
+                                <img src="images/seguro-vida.png" alt="">
+                                <h3>Seguro del hogar</h3> 
+                                <span>0,80%</span>
+                            </div>
+                            <div class="dflex-item">
+                                <img src="images/seguro-hogar.png" alt="">
+                                <h3>Seguro de vida </h3> 
+                                <span>0,90%</span>
+                            </div>
+                            <div class="dflex-item">
+                                <img src="images/seguro-coche.png" alt="">
+                                <h3>Seguro de coche</h3> 
+                                <span>1,15%</span>
+                            </div>
+                            <div class="dflex-item">
+                                <img src="images/nomina.png" alt="">
+                                <h3>Domiciliación Nómina</h3> 
+                                <span>1,15%</span>
+                            </div>
+
+                            <div class="dflex-item"> 
+                                <img src="images/domiciliacion-recibos.png" alt="">
+                                <h3>Domiciliación Recibos</h3> 
+                                <span>1,15%</span>
+                            </div>
+                            <div class="dflex-item">
+                                <img src="images/plan-de-pensiones.png" alt="">
+                                <h3>Plan de pensiones</h3> 
+                                <span>1,15%</span>
+                            </div>
+                            <div class="dflex-item">
+                                <img src="images/tarjetas.png" alt="">
+                                <h3>Tarjeta de crédito/débito</h3> 
+                                <span>1,15%</span>
+                            </div>
+                            <div class="dflex-item">
+                                <img src="images/vivienda-sostenible.png" alt="">
+                                <h3>Vivienda Sostenible</h3> 
+                                <span>1,15%</span>
+                            </div>
+                            <div class="dflex-item">
+                                <img src="images/saldo.png" alt="">
+                                <h3>Saldo</h3> 
+                                <span>1,15%</span>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- vinculaciones -->
+                </div>
+            </div>
+            <!-- Table Part Three -->
+        </div>
+    </div>
+    <!-- End: Header Section 
+==================================================-->
+ 
+
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+ </script>
+
+ 
+
+
+</body>
+
+</html>
